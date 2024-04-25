@@ -1,7 +1,8 @@
 class Solution {
-    public int search(int[] nums, int target) {
+public:
+    int search(vector<int>& nums, int target) {
 		//algoritmul are complexitatea de timp O(logn) si complexitate spatiu O(1)
-        int high= nums.length-1;
+		int high= nums.size()-1;
         int low=0;
         int i=(high+low)/2;
         do
@@ -23,4 +24,5 @@ class Solution {
         }while(low<=high);
         return -1;
     }
-}
+    
+};
